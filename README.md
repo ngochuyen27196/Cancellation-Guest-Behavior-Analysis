@@ -4,7 +4,7 @@ An end-to-end analytics project on hotel booking data: raw CSV is loaded into SQ
 
 **Project question:** Which bookings are most likely to be cancelled, where does revenue come from, and how do pricing and seasonality behave across two hotels in Portugal?
 
-![Dashboard overview](images/overview.png)
+![Overview](Screenshots/overview.png).
 
 ---
 
@@ -81,9 +81,9 @@ Three pages: **Overview**, **Cancellation Analysis**, **Revenue Analysis**.
 
 ## Dashboard preview
 
-![Overview](images/overview.png)
-![Cancellation Analysis](images/cancellation.png)
-![Revenue Analysis](images/revenue.png)
+![Overview](Screenshots/overview.png)
+![Cancellation Analysis](Screenshots/cancellation.png)
+![Revenue Analysis](Screenshots/revenue.png)
 
 ## Repository structure
 
