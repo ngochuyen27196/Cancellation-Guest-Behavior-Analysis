@@ -4,8 +4,6 @@ An end-to-end analytics project on hotel booking data: raw CSV is loaded into SQ
 
 **Project question:** Which bookings are most likely to be cancelled, where does revenue come from, and how do pricing and seasonality behave across two hotels in Portugal?
 
-![Overview](Screenshots/overview.png).
-
 ---
 
 ## Why this project
@@ -61,7 +59,7 @@ Created `HotelBookingDB` and imported the CSV into `raw_bookings` with the SSMS 
 - Checked data types: `is_canceled` is `bit`, so it is cast to `INT` before `SUM` and `AVG`.
 
 ### 3. Analyse (SQL)
-Ten queries in [`sql/queries.sql`](sql/queries.sql) covering:
+Ten queries in [`SQL/queries.sql`](SQL/queries.sql) covering:
 
 - `GROUP BY` and aggregate functions
 - CTEs, including nested CTEs
@@ -88,23 +86,23 @@ Three pages: **Overview**, **Cancellation Analysis**, **Revenue Analysis**.
 ## Repository structure
 
 ```
-hotel-booking-sql-powerbi-project/
-├── data/            # hotel_bookings.csv (raw data)
-├── sql/
-│   └── queries.sql  # cleaning, 10 analysis queries, 4 views
-├── powerbi/
-│   └── *.pbix       # Power BI dashboard
-├── images/          # dashboard screenshots
+├── SQL/
+│   └── queries.sql      # cleaning, 10 analysis queries, 4 views
+├── Powerbi/
+│   └── *.pbix           # Power BI dashboard
+├── Screenshots/         # dashboard screenshots
 └── README.md
 ```
+
+The raw dataset is not included. Download *Hotel Booking Demand* from Kaggle (`hotel_bookings.csv`).
 
 ## How to reproduce
 
 1. Install SQL Server, SSMS and Power BI Desktop.
 2. Create the database `HotelBookingDB`.
-3. Import `hotel_bookings.csv` into a table named `raw_bookings` (SSMS: Tasks, Import Flat File).
-4. Open `sql/queries.sql` in SSMS and run it in order. `clean_bookings` is created with `SELECT INTO`; to re-run, use `DROP TABLE IF EXISTS clean_bookings` first.
-5. Open the `.pbix` file in `powerbi/` and point the data source to your SQL Server instance (Transform data, Data source settings).
+3. Download `hotel_bookings.csv` from Kaggle and import it into a table named `raw_bookings` (SSMS: Tasks, Import Flat File).
+4. Open `SQL/queries.sql` in SSMS and run it in order. `clean_bookings` is created with `SELECT INTO`; to re-run, use `DROP TABLE IF EXISTS clean_bookings` first.
+5. Open the `.pbix` file in `Powerbi/` and point the data source to your SQL Server instance (Transform data, Data source settings).
 
 ## Limitations
 
