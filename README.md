@@ -79,9 +79,9 @@ Three pages: **Overview**, **Cancellation Analysis**, **Revenue Analysis**.
 
 ## Dashboard preview
 
-![Overview](Screenshots/overview.png)
-![Cancellation Analysis](Screenshots/cancellation.png)
-![Revenue Analysis](Screenshots/revenue.png)
+![Overview](Screenshots/Overview.png)
+![Cancellation Analysis](Screenshots/Cancellation%20Analysis.png)
+![Revenue Analysis](Screenshots/Revenue%20Analysis.png)
 
 ## Repository structure
 
